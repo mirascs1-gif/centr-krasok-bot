@@ -17,7 +17,7 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN", "8808605575:AAHqbozqgBNqAz5hkeGm9vcguuTdXgz9c0Y")
-GEMINI_KEY     = os.getenv("GEMINI_KEY",     "AIzaSyA78nw0ZHU1lUZPaDsRVWqtJ7GYXpxS_wo")
+GEMINI_KEY     = os.getenv("GEMINI_KEY",     "AIzaSyC6xofPmGmpF-aXFk4gixpIw2gG2LSzsIk")
 
 COMPANY_KNOWLEDGE = """
 === БАЗА ЗНАНИЙ: «Центр Красок #1» ===

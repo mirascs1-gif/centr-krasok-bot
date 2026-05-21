@@ -25,7 +25,7 @@ logger = logging.getLogger(__name__)
 
 # ─── Токены (замените своими или выставьте переменные окружения) ──────────────
 TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN", "8808605575:AAHqbozqgBNqAz5hkeGm9vcguuTdXgz9c0Y")
-ANTHROPIC_KEY = os.getenv("ANTHROPIC_KEY", "")
+ANTHROPIC_KEY = os.getenv("ANTHROPIC_KEY", "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")
  
 # ─── База знаний о компании ────────────────────────────────────────────────────
 COMPANY_KNOWLEDGE = """

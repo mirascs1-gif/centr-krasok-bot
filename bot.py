@@ -7,7 +7,7 @@ Telegram AI-бот для «Центр Красок #1»
 
 Переменные окружения (или задайте прямо здесь):
     TELEGRAM_TOKEN  — 8808605575:AAHqbozqgBNqAz5hkeGm9vcguuTdXgz9c0Y
-    ANTHROPIC_KEY   — AIzaSyBtYYdHC3pWAxz0L9Rspz-PXADfe9MKiiM
+    ANTHROPIC_KEY   — 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
 """
 
 import os
@@ -25,8 +25,8 @@ logger = logging.getLogger(__name__)
 
 # ─── Токены (замените своими или выставьте переменные окружения) ──────────────
 TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN", "8808605575:AAHqbozqgBNqAz5hkeGm9vcguuTdXgz9c0Y")
-ANTHROPIC_KEY  = os.getenv("ANTHROPIC_KEY",  "AIzaSyBtYYdHC3pWAxz0L9Rspz-PXADfe9MKiiM")
-
+ANTHROPIC_KEY = os.getenv("ANTHROPIC_KEY", "")
+ 
 # ─── База знаний о компании ────────────────────────────────────────────────────
 COMPANY_KNOWLEDGE = """
 === БАЗА ЗНАНИЙ: «Центр Красок #1» ===

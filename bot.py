@@ -16,7 +16,7 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
-TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN", "8808605575:AAHqbozqgBNqAz5hkeGm9vcguuTdXgz9c0Y")
+TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN", "8808605575:AAFmbQPVPo3Ibeac1LMaRJQmRl5o7mKERhg")
 GEMINI_KEY     = os.getenv("GEMINI_KEY",     "AIzaSyAu0_jnEZdL0NboPEP76TJHj8M6yuEVPA0")
 
 COMPANY_KNOWLEDGE = """
@@ -133,7 +133,7 @@ def get_ai_response(user_id: int, user_message: str) -> str:
             history[:] = history[-20:]
 
         response = client.models.generate_content(
-            model="gemini-2.0-flash",
+            model='gemini-2.5-flash',
             contents=history,
             config=types.GenerateContentConfig(
                 system_instruction=SYSTEM_PROMPT,

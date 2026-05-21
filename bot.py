@@ -7,7 +7,7 @@ Telegram AI-бот для «Центр Красок #1»
 
 Переменные окружения (или задайте прямо здесь):
     TELEGRAM_TOKEN  — 8808605575:AAHqbozqgBNqAz5hkeGm9vcguuTdXgz9c0Y
-    ANTHROPIC_KEY   — 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
+    ANTHROPIC_KEY   — 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
 """
 
 import os
@@ -25,7 +25,7 @@ logger = logging.getLogger(__name__)
 
 # ─── Токены (замените своими или выставьте переменные окружения) ──────────────
 TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN", "8808605575:AAHqbozqgBNqAz5hkeGm9vcguuTdXgz9c0Y")
-ANTHROPIC_KEY = os.getenv("ANTHROPIC_KEY", "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")
+ANTHROPIC_KEY = os.getenv("ANTHROPIC_KEY", "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")
  
 # ─── База знаний о компании ────────────────────────────────────────────────────
 COMPANY_KNOWLEDGE = """
@@ -163,7 +163,7 @@ def get_ai_response(user_id: int, user_message: str) -> str:
 
     try:
         response = anthropic_client.messages.create(
-            model="claude-sonnet-4-20250514",
+            model="claude-sonnet-4-5",
             max_tokens=1000,
             system=SYSTEM_PROMPT,
             messages=history,
